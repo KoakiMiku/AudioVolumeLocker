@@ -1,0 +1,42 @@
+<Window x:Class="AudioVolumeLocker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AudioVolumeLocker"
+        Height="100"
+        Width="200"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        MouseWheel="Window_MouseWheel">
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label"
+               Grid.Column="0"
+               Margin="10,10,0,10"
+               BorderThickness="0"
+               BorderBrush="Transparent"
+               Background="DimGray"
+               Foreground="White"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="20" />
+        <Button x:Name="button"
+                Grid.Column="1"
+                Margin="0,10,10,10"
+                BorderThickness="0"
+                BorderBrush="Transparent"
+                Background="DimGray"
+                Foreground="White"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="20"
+                Click="Button_Click" />
+    </Grid>
+</Window>
